@@ -21,7 +21,10 @@ export const Route = createFileRoute("/")({
 			},
 			{ name: "twitter:description", content: siteConfig.description },
 		],
-		links: [{ rel: "canonical", href: siteConfig.siteUrl }],
+		links: [
+			{ rel: "canonical", href: siteConfig.siteUrl },
+			{ rel: "icon", type: "image/png", href: "/favicon.png" },
+		],
 	}),
 	component: Home,
 });
