@@ -55,7 +55,7 @@ export const experienceItems: ExperienceItem[] = [
 			"PostgreSQL",
 		],
 		description:
-			"Desenvolvi e mantive um painel administrativo para a gestão do trânsito municipal, com foco na otimização de fluxos operacionais e na melhoria da usabilidade. Fui responsável por integrar sistemas internos, otimizar consultas para dar mais eficiência às rotinas administrativas e aprimorar a experiência do usuário com interfaces mais intuitivas. Além do desenvolvimento de novas funcionalidades, atuei no planejamento técnico e na correção de problemas, garantindo a alta performance e a estabilidade contínua do sistema.",
+			"Atuei no desenvolvimento e evolução de um sistema administrativo voltado à gestão do trânsito municipal, contribuindo para a organização de dados, automatização de processos internos e melhoria das rotinas de atendimento. Fui responsável pela implementação de funcionalidades, integração entre sistemas, otimização de consultas e ajustes técnicos para aumentar a eficiência da plataforma. Também participei da análise de demandas, correção de inconsistências e melhorias contínuas, garantindo maior estabilidade e confiabilidade ao sistema.",
 	},
 	{
 		role: "Desenvolvedor Back-end",
