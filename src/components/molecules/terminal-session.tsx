@@ -121,7 +121,7 @@ export function TerminalSession() {
 	return (
 		<div
 			ref={terminalRef}
-			className="terminal-scroll h-[18rem] w-full space-y-3 overflow-y-auto pr-1 font-mono text-xs leading-5 text-zinc-300 sm:h-[25rem] sm:w-120 sm:space-y-4 sm:pr-2 sm:text-sm sm:leading-6"
+			className="terminal-scroll h-[18rem] w-full space-y-3 overflow-y-auto pr-1 font-mono text-xs leading-5 text-zinc-300 sm:h-[25rem] sm:space-y-4 sm:pr-2 sm:text-sm sm:leading-6"
 		>
 			{session
 				.slice(

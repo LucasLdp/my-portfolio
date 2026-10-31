@@ -40,7 +40,7 @@ export const experienceItems: ExperienceItem[] = [
 			"NestJS",
 		],
 		description:
-			"Atuei no desenvolvimento de aplicações web e mobile com React Native, Next.js, Node.js e NestJS, impactando 10.000+ usuários em mais de 20 provedoras de internet. Otimizei interfaces para melhor performance e usabilidade. Além das entregas técnicas e correções de bugs, colaborei em code reviews e planejamentos para garantir estabilidade e melhorias de UX.",
+			"Desenvolvi aplicações web e mobile com React Native, Next.js, Node.js e NestJS, com impacto em mais de 10 mil usuários de 20+ provedoras de internet. Também otimizei interfaces, corrigi bugs e participei de code reviews e planejamentos, com foco em estabilidade e experiência de uso.",
 	},
 	{
 		role: "Desenvolvedor Web",
@@ -49,13 +49,13 @@ export const experienceItems: ExperienceItem[] = [
 		technologies: [
 			"Next.js",
 			"TypeScript",
-			"NestJS	",
+			"NestJS",
 			"Tailwind CSS",
 			"Node.js",
 			"PostgreSQL",
 		],
 		description:
-			"Atuei no desenvolvimento e evolução de um sistema administrativo voltado à gestão do trânsito municipal, contribuindo para a organização de dados, automatização de processos internos e melhoria das rotinas de atendimento. Fui responsável pela implementação de funcionalidades, integração entre sistemas, otimização de consultas e ajustes técnicos para aumentar a eficiência da plataforma. Também participei da análise de demandas, correção de inconsistências e melhorias contínuas, garantindo maior estabilidade e confiabilidade ao sistema.",
+			"Desenvolvi funcionalidades e integrações para um sistema administrativo de gestão do trânsito municipal. Também otimizei consultas, analisei demandas e corrigi inconsistências, contribuindo para automatizar processos internos e melhorar as rotinas de atendimento.",
 	},
 	{
 		role: "Desenvolvedor Back-end",
@@ -72,116 +72,7 @@ export const experienceItems: ExperienceItem[] = [
 			"JavaScript",
 		],
 		description:
-			"Desenvolvi e mantive um painel administrativo para a gestão de um órgão de saúde municipal, com foco na otimização de fluxos operacionais e na melhoria da usabilidade. Fui responsável por integrar sistemas internos, otimizar consultas para dar mais eficiência às rotinas administrativas e aprimorar a experiência do usuário com interfaces mais intuitivas. Além do desenvolvimento de novas funcionalidades, atuei no planejamento técnico e na correção de problemas, garantindo a alta performance e a estabilidade contínua do sistema.",
-	},
-];
-
-export const technologyMarquee: TechnologyItem[] = [
-	{
-		name: "AdonisJS",
-		skillIcon: "adonis",
-		description: "Back-end organizado",
-	},
-	{
-		name: "PostgreSQL",
-		skillIcon: "postgres",
-		description: "Dados relacionais",
-	},
-	{
-		name: "MySQL",
-		skillIcon: "mysql",
-		description: "Banco de dados",
-	},
-	{
-		name: "HTML",
-		skillIcon: "html",
-		description: "Estrutura da web",
-	},
-	{
-		name: "CSS",
-		skillIcon: "css",
-		description: "Estilo e layout",
-	},
-	{
-		name: "JavaScript",
-		skillIcon: "js",
-		description: "Lógica no navegador",
-	},
-	{
-		name: "React",
-		skillIcon: "react",
-		description: "Interfaces componíveis",
-	},
-	{
-		name: "Vue",
-		skillIcon: "vue",
-		description: "Interface progressiva",
-	},
-	{
-		name: "Svelte",
-		skillIcon: "svelte",
-		description: "UI sem excesso",
-	},
-	{
-		name: "NestJS",
-		skillIcon: "nestjs",
-		description: "APIs modulares",
-	},
-	{
-		name: "Django",
-		skillIcon: "django",
-		description: "Aplicações Python",
-	},
-	{
-		name: "Python",
-		skillIcon: "py",
-		description: "Automação e dados",
-	},
-	{
-		name: "Node.js",
-		skillIcon: "nodejs",
-		description: "Serviços e APIs",
-	},
-	{
-		name: "TypeScript",
-		skillIcon: "ts",
-		description: "Contratos claros",
-	},
-	{
-		name: "Tailwind CSS",
-		skillIcon: "tailwind",
-		description: "Ritmo visual",
-	},
-	{
-		name: "Git",
-		skillIcon: "git",
-		description: "Histórico compartilhado",
-	},
-	{
-		name: "Express",
-		skillIcon: "express",
-		description: "APIs enxutas",
-	},
-	{
-		name: "Prisma",
-		skillIcon: "prisma",
-		description: "Acesso a dados",
-	},
-	{
-		name: "Docker",
-		skillIcon: "docker",
-		description: "Ambientes consistentes",
-	},
-	{
-		name: "Next.js",
-		skillIcon: "nextjs",
-		description: "Aplicações React",
-	},
-	{
-		name: "TanStack",
-		skillIcon: "tanstack",
-		logoUrl: "https://cdn.simpleicons.org/tanstack/FF4154",
-		description: "Dados e rotas",
+			"Desenvolvi e mantive um painel administrativo para um órgão de saúde municipal. Integrei sistemas internos, otimizei consultas, implementei funcionalidades e participei do planejamento técnico e da correção de problemas para apoiar os fluxos da equipe.",
 	},
 ];
 
@@ -189,50 +80,44 @@ export const technologyGrid: TechnologyItem[] = [
 	{
 		name: "React",
 		skillIcon: "react",
-		description:
-			"Para organizar interfaces em partes reutilizáveis e fáceis de entender.",
+		description: "Interfaces web construídas com componentes reutilizáveis.",
 	},
 	{
 		name: "TypeScript",
 		skillIcon: "ts",
 		description:
-			"Para tornar contratos entre telas, APIs e dados mais explícitos.",
+			"Tipagem para explicitar contratos entre interface e serviços.",
 	},
 	{
 		name: "TanStack",
 		skillIcon: "tanstack",
 		logoUrl: "https://cdn.simpleicons.org/tanstack/FF4154",
-		description:
-			"Quando uma aplicação precisa juntar navegação, dados e renderização no servidor.",
+		description: "Rotas e renderização usadas neste portfólio.",
 	},
 	{
 		name: "Node.js",
 		skillIcon: "nodejs",
-		description:
-			"Para APIs e tarefas que conectam diferentes partes de um sistema.",
+		description: "Runtime JavaScript usado em serviços e APIs.",
 	},
 	{
 		name: "Tailwind CSS",
 		skillIcon: "tailwind",
-		description:
-			"Para manter ritmo visual sem transformar cada tela em uma exceção.",
+		description: "Estilização de interfaces com classes utilitárias.",
 	},
 	{
 		name: "PostgreSQL",
 		skillIcon: "postgres",
-		description:
-			"Para verificar comportamentos importantes antes de publicar uma mudança.",
+		description: "Banco relacional presente nos sistemas em que trabalhei.",
 	},
 	{
 		name: "NestJS",
 		skillIcon: "nestjs",
-		description:
-			"Para validar o que entra na aplicação antes que vire erro adiante.",
+		description: "Framework Node.js usado no desenvolvimento de APIs.",
 	},
 	{
 		name: "Docker",
 		skillIcon: "docker",
-		description: "Para publicar, observar e ajustar o que está em produção.",
+		description: "Contêineres para empacotar aplicações e dependências.",
 	},
 ];
 
