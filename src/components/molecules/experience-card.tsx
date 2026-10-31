@@ -1,4 +1,3 @@
-import { Badge } from "#/components/atoms/badge";
 import { cn } from "#/lib/utils";
 
 type ExperienceCardProps = {
@@ -21,32 +20,30 @@ export function ExperienceCard({
 	return (
 		<article
 			className={cn(
-				"group relative overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] p-6 transition duration-300 hover:border-emerald-400/30 hover:bg-white/[0.05]",
+				"grid gap-4 border-t border-white/10 py-6 sm:grid-cols-[minmax(12rem,0.8fr)_minmax(0,1.4fr)] sm:gap-10",
 				className,
 			)}
 		>
-			<div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
-			<div className="flex flex-col gap-3">
-				<div className="flex flex-wrap items-start justify-between gap-3">
-					<div>
-						<h3 className="text-lg font-semibold text-white">{role}</h3>
-						<p className="mt-1 text-sm text-zinc-400">{company}</p>
-					</div>
-					<Badge className="border-emerald-400/15 bg-emerald-400/8 text-emerald-200">
-						{period}
-					</Badge>
-				</div>
+			<div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1 sm:block">
+				<h3 className="text-lg font-semibold text-white">{role}</h3>
+				<p className="font-mono text-xs text-emerald-200/80">{period}</p>
+				<p className="mt-1 w-full text-sm text-zinc-400">{company}</p>
+			</div>
+			<div>
 				<p className="text-sm leading-7 text-zinc-300">{description}</p>
-				<div className="flex flex-wrap gap-2 pt-1">
+				<ul
+					aria-label={`Tecnologias utilizadas: ${company}`}
+					className="mt-3 flex flex-wrap gap-x-3 gap-y-1"
+				>
 					{technologies.map((technology) => (
-						<span
+						<li
 							key={technology}
-							className="rounded-full border border-white/10 bg-zinc-950/40 px-3 py-1 text-xs text-zinc-300"
+							className="text-xs text-zinc-500 before:mr-1.5 before:text-emerald-500/70 before:content-['/']"
 						>
 							{technology}
-						</span>
+						</li>
 					))}
-				</div>
+				</ul>
 			</div>
 		</article>
 	);

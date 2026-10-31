@@ -14,8 +14,10 @@ type BaseProps = {
 	children: ReactNode;
 };
 
-type ButtonAsButtonProps = BaseProps & ButtonHTMLAttributes<HTMLButtonElement>;
-type ButtonAsAnchorProps = BaseProps & AnchorHTMLAttributes<HTMLAnchorElement>;
+type ButtonAsButtonProps = BaseProps &
+	ButtonHTMLAttributes<HTMLButtonElement> & { href?: never };
+type ButtonAsAnchorProps = BaseProps &
+	Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "type"> & { href: string };
 
 const variantClasses: Record<ButtonVariant, string> = {
 	primary:
@@ -33,12 +35,12 @@ export function Button({
 	...props
 }: ButtonAsButtonProps | ButtonAsAnchorProps) {
 	const classes = cn(
-		"inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold outline-none transition duration-200 focus-visible:ring-2 focus-visible:ring-offset-0 disabled:pointer-events-none disabled:opacity-50",
+		"group inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold outline-none transition duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-0 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none",
 		variantClasses[variant],
 		className,
 	);
 
-	if ("href" in props) {
+	if (typeof props.href === "string") {
 		return (
 			<a className={classes} {...props}>
 				{children}
@@ -47,7 +49,7 @@ export function Button({
 	}
 
 	return (
-		<button className={classes} type={props.type ?? "button"} {...props}>
+		<button {...props} className={classes} type={props.type ?? "button"}>
 			{children}
 		</button>
 	);
