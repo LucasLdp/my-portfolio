@@ -1,10 +1,9 @@
-import { Download } from "lucide-react";
-
 import { Badge } from "#/components/atoms/badge";
 import { Button } from "#/components/atoms/button";
 import { Reveal } from "#/components/molecules/reveal";
 import { SocialLinks } from "#/components/molecules/social-links";
 import { TerminalSession } from "#/components/molecules/terminal-session";
+import { HeroBackdrop } from "#/components/organisms/hero-backdrop";
 import { socialLinks } from "#/constants/portfolio";
 import { siteConfig } from "#/constants/site";
 
@@ -14,6 +13,8 @@ export function Hero() {
 			id="inicio"
 			className="relative overflow-hidden py-16 sm:py-24 lg:py-28"
 		>
+			<HeroBackdrop />
+
 			<div className="page-wrap relative z-10 grid gap-12 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
 				<Reveal>
 					<div className="space-y-8">
@@ -39,15 +40,6 @@ export function Hero() {
 						<div className="flex flex-wrap gap-3">
 							<Button variant="secondary" href={`mailto:${siteConfig.email}`}>
 								Entrar em contato
-							</Button>
-
-							<Button
-								variant="secondary"
-								href="/curriculo-lucas-gomes.pdf"
-								download="Curriculo-Lucas-Gomes.pdf"
-							>
-								<Download className="h-4 w-4" aria-hidden="true" />
-								Baixar currículo
 							</Button>
 						</div>
 

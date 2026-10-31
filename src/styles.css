@@ -23,8 +23,6 @@
   --panel: rgba(10, 16, 15, 0.9);
   --panel-strong: rgba(8, 12, 11, 0.96);
   --grid-line: rgba(255, 255, 255, 0.045);
-  --hero-a: rgba(74, 222, 128, 0.18);
-  --hero-b: rgba(22, 163, 74, 0.1);
 
   --background: oklch(1 0 0);
   --foreground: oklch(0.141 0.005 285.823);
@@ -154,10 +152,12 @@ body {
   color: var(--ink);
   font-family: var(--font-sans);
   background-color: var(--bg-base);
-  background:
-    radial-gradient(1000px 620px at 14% 4%, var(--hero-a), transparent 60%),
-    radial-gradient(900px 520px at 88% 8%, var(--hero-b), transparent 62%),
-    linear-gradient(180deg, var(--bg-soft) 0%, var(--bg-base) 24%, #050807 100%);
+  background: linear-gradient(
+    180deg,
+    var(--bg-soft) 0%,
+    var(--bg-base) 24%,
+    #050807 100%
+  );
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -228,6 +228,25 @@ pre code {
 .page-wrap {
   width: min(1160px, calc(100% - 2rem));
   margin-inline: auto;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(to right, rgba(74, 222, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(74, 222, 128, 0.1) 1px, transparent 1px),
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size:
+    44px 44px,
+    44px 44px,
+    11px 11px,
+    11px 11px;
+  opacity: 0.6;
+  mask-image: radial-gradient(
+    ellipse 90% 80% at 50% 40%,
+    black 20%,
+    transparent 85%
+  );
 }
 
 .display-title {
