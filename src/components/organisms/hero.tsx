@@ -11,7 +11,7 @@ export function Hero({ theme }: { theme: AmbientTheme }) {
 	return (
 		<section
 			id="inicio"
-			className="relative overflow-hidden py-16 sm:py-24 lg:py-28"
+			className="relative flex min-h-[72svh] items-center overflow-hidden py-16 sm:py-24 lg:min-h-0 lg:py-28"
 		>
 			<HeroBackdrop theme={theme} />
 
@@ -41,7 +41,10 @@ export function Hero({ theme }: { theme: AmbientTheme }) {
 					</div>
 				</Reveal>
 
-				<Reveal delay={0.12} className="w-full lg:justify-self-end">
+				<Reveal
+					delay={0.12}
+					className="hidden w-full lg:block lg:justify-self-end"
+				>
 					<div className="island-shell relative w-full max-w-[32.5rem] overflow-hidden rounded-xl p-3 sm:rounded-2xl sm:p-5">
 						<div className="terminal-panel rounded-lg border border-white/8 bg-[#09110f] p-3.5 shadow-2xl shadow-black/30 sm:rounded-xl sm:p-6">
 							<div className="flex items-center gap-1.5 border-b border-white/10 pb-3 text-[0.65rem] text-zinc-400 sm:gap-2 sm:pb-4 sm:text-xs">
