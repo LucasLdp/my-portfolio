@@ -22,7 +22,7 @@ export function AmbientThemeToggle({
 			aria-label={`Ativar tema ${nextTheme === "sun" ? "Claro" : "Escuro"}`}
 			aria-pressed={theme === "moon"}
 			title={`Ativar tema ${nextTheme === "sun" ? "Claro" : "Escuro"}`}
-			className="group inline-flex min-h-12 items-center gap-2 rounded-full border border-white/10 bg-white/[0.035] px-3 text-zinc-200 transition-colors hover:border-emerald-300/35 hover:bg-white/[0.07] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300 motion-reduce:transition-none"
+			className="group inline-flex min-h-11 items-center gap-2 rounded-lg border border-white/10 bg-white/[0.035] px-3 text-zinc-200 transition-colors hover:border-emerald-300/35 hover:bg-white/[0.07] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-emerald-300 motion-reduce:transition-none"
 		>
 			<span className="relative flex h-9 w-9 items-center justify-center overflow-hidden text-emerald-200">
 				<AnimatePresence mode="wait" initial={false}>

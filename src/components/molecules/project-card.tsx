@@ -24,12 +24,12 @@ export function ProjectCard({
 	return (
 		<article
 			className={cn(
-				"group overflow-hidden rounded-3xl border border-white/10 bg-white/[0.03] transition duration-300 hover:border-emerald-400/30 hover:bg-white/[0.05]",
+				"group overflow-hidden rounded-xl border border-white/10 bg-white/[0.03] transition duration-300 hover:border-emerald-400/30 hover:bg-white/[0.05] sm:rounded-2xl",
 				className,
 			)}
 		>
 			<div className="border-b border-white/10 p-5">
-				<div className="relative aspect-[16/9] overflow-hidden rounded-2xl border border-white/10 bg-[radial-gradient(circle_at_top,rgba(74,222,128,0.18),transparent_56%),linear-gradient(135deg,rgba(24,24,27,1),rgba(9,9,11,0.9))]">
+				<div className="relative aspect-[16/9] overflow-hidden rounded-lg border border-white/10 bg-[radial-gradient(circle_at_top,rgba(74,222,128,0.18),transparent_56%),linear-gradient(135deg,rgba(24,24,27,1),rgba(9,9,11,0.9))] sm:rounded-xl">
 					<div className="absolute inset-0 bg-[linear-gradient(115deg,transparent,rgba(255,255,255,0.06),transparent)] opacity-0 transition duration-300 group-hover:opacity-100" />
 					<div className="absolute inset-0 flex items-end justify-between p-4">
 						<div>
@@ -40,7 +40,7 @@ export function ProjectCard({
 								{title}
 							</h3>
 						</div>
-						<div className="rounded-full border border-white/10 bg-zinc-950/70 px-3 py-2 text-xs text-zinc-300">
+						<div className="rounded-md border border-white/10 bg-zinc-950/70 px-3 py-2 text-xs text-zinc-300">
 							Web app
 						</div>
 					</div>

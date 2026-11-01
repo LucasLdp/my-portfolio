@@ -35,7 +35,7 @@ export function Button({
 	...props
 }: ButtonAsButtonProps | ButtonAsAnchorProps) {
 	const classes = cn(
-		"group inline-flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-semibold outline-none transition duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-0 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none",
+		"group inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 py-2.5 text-sm font-semibold outline-none transition duration-200 hover:-translate-y-0.5 active:translate-y-0 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-offset-0 disabled:pointer-events-none disabled:opacity-50 motion-reduce:transform-none motion-reduce:transition-none",
 		variantClasses[variant],
 		className,
 	);

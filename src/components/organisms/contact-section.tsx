@@ -11,7 +11,7 @@ export function ContactSection() {
 		<section id="contato" className="py-16 sm:py-20">
 			<div className="page-wrap">
 				<Reveal>
-					<div className="island-shell overflow-hidden rounded-[2rem] p-6 sm:p-8 lg:p-10">
+					<div className="island-shell overflow-hidden rounded-xl p-5 sm:rounded-2xl sm:p-8 lg:p-10">
 						<SectionHeading
 							eyebrow="Contato"
 							title="Tem uma ideia, uma vaga ou um problema para conversar?"

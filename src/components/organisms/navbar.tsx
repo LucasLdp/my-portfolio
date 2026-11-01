@@ -16,7 +16,7 @@ export function Navbar({
 }) {
 	return (
 		<header className="sticky top-0 z-30 border-b border-white/5 bg-zinc-950/80 backdrop-blur-xl">
-			<div className="page-wrap flex items-center justify-between py-4">
+			<div className="page-wrap grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-3 gap-y-3 py-3 md:flex md:justify-between md:py-4">
 				<a
 					href="#inicio"
 					className="flex items-center gap-3 text-white no-underline"
@@ -41,14 +41,14 @@ export function Navbar({
 						<a
 							key={item.href}
 							href={item.href}
-							className="rounded-full px-4 py-2 text-sm text-zinc-300 no-underline transition hover:bg-white/5 hover:text-white"
+							className="rounded-md px-3 py-2 text-sm text-zinc-300 no-underline transition hover:bg-white/5 hover:text-white"
 						>
 							{item.label}
 						</a>
 					))}
 				</nav>
 
-				<div className="flex items-center gap-2">
+				<div className="col-start-2 row-start-1 flex items-center justify-self-end gap-2 md:static">
 					<AmbientThemeToggle theme={theme} onToggle={onThemeToggle} />
 					<div className="hidden md:block">
 						<Button variant="secondary" href={`mailto:${siteConfig.email}`}>
@@ -57,8 +57,8 @@ export function Navbar({
 					</div>
 				</div>
 
-				<div className="md:hidden">
-					<Badge className="border-white/10 bg-white/5 text-zinc-200">
+				<div className="col-span-2 row-start-2 min-w-0 md:hidden">
+					<Badge className="max-w-full whitespace-nowrap rounded-md border-white/10 bg-white/5 px-2.5 py-1 text-[0.65rem] tracking-[0.12em] text-zinc-200">
 						Aberto a oportunidades
 					</Badge>
 				</div>
