@@ -5,7 +5,6 @@ import type {
 	ExperienceItem,
 	ProjectItem,
 	SocialLink,
-	TechnologyItem,
 } from "#/types/portfolio";
 import { siteConfig } from "./site";
 
@@ -76,50 +75,26 @@ export const experienceItems: ExperienceItem[] = [
 	},
 ];
 
-export const technologyGrid: TechnologyItem[] = [
-	{
-		name: "React",
-		skillIcon: "react",
-		description: "Interfaces web construídas com componentes reutilizáveis.",
-	},
-	{
-		name: "TypeScript",
-		skillIcon: "ts",
-		description:
-			"Tipagem para explicitar contratos entre interface e serviços.",
-	},
-	{
-		name: "TanStack",
-		skillIcon: "tanstack",
-		logoUrl: "https://cdn.simpleicons.org/tanstack/FF4154",
-		description: "Rotas e renderização usadas neste portfólio.",
-	},
-	{
-		name: "Node.js",
-		skillIcon: "nodejs",
-		description: "Runtime JavaScript usado em serviços e APIs.",
-	},
-	{
-		name: "Tailwind CSS",
-		skillIcon: "tailwind",
-		description: "Estilização de interfaces com classes utilitárias.",
-	},
-	{
-		name: "PostgreSQL",
-		skillIcon: "postgres",
-		description: "Banco relacional presente nos sistemas em que trabalhei.",
-	},
-	{
-		name: "NestJS",
-		skillIcon: "nestjs",
-		description: "Framework Node.js usado no desenvolvimento de APIs.",
-	},
-	{
-		name: "Docker",
-		skillIcon: "docker",
-		description: "Contêineres para empacotar aplicações e dependências.",
-	},
-];
+export const githubSkills = [
+	{ name: "JavaScript", icon: "js" },
+	{ name: "HTML", icon: "html" },
+	{ name: "CSS", icon: "css" },
+	{ name: "React", icon: "react" },
+	{ name: "Next.js", icon: "nextjs" },
+	{ name: "TypeScript", icon: "ts" },
+	{ name: "Tailwind CSS", icon: "tailwind" },
+	{ name: "Docker", icon: "docker" },
+	{ name: "Git", icon: "git" },
+	{ name: "Vue", icon: "vue" },
+	{ name: "Node.js", icon: "nodejs" },
+	{ name: "MySQL", icon: "mysql" },
+	{ name: "PostgreSQL", icon: "postgres" },
+	{ name: "AdonisJS", icon: "adonis" },
+	{ name: "NestJS", icon: "nest" },
+	{ name: "Express", icon: "express" },
+	{ name: "Python", icon: "py" },
+	{ name: "Django", icon: "django" },
+] as const;
 
 export const projectItems: ProjectItem[] = [
 	{

@@ -19,13 +19,6 @@ export type ExperienceItem = {
 	description: string;
 };
 
-export type TechnologyItem = {
-	name: string;
-	skillIcon: string;
-	logoUrl?: string;
-	description: string;
-};
-
 export type ProjectItem = {
 	title: string;
 	description: string;

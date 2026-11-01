@@ -1,9 +1,19 @@
+import {
+	type AmbientTheme,
+	AmbientThemeToggle,
+} from "#/components/atoms/ambient-theme-toggle";
 import { Badge } from "#/components/atoms/badge";
 import { Button } from "#/components/atoms/button";
 import { navigationItems } from "#/constants/navigation";
 import { siteConfig } from "#/constants/site";
 
-export function Navbar() {
+export function Navbar({
+	theme,
+	onThemeToggle,
+}: {
+	theme: AmbientTheme;
+	onThemeToggle: () => void;
+}) {
 	return (
 		<header className="sticky top-0 z-30 border-b border-white/5 bg-zinc-950/80 backdrop-blur-xl">
 			<div className="page-wrap flex items-center justify-between py-4">
@@ -38,10 +48,13 @@ export function Navbar() {
 					))}
 				</nav>
 
-				<div className="hidden md:block">
-					<Button variant="secondary" href={`mailto:${siteConfig.email}`}>
-						Vamos conversar
-					</Button>
+				<div className="flex items-center gap-2">
+					<AmbientThemeToggle theme={theme} onToggle={onThemeToggle} />
+					<div className="hidden md:block">
+						<Button variant="secondary" href={`mailto:${siteConfig.email}`}>
+							Vamos conversar
+						</Button>
+					</div>
 				</div>
 
 				<div className="md:hidden">

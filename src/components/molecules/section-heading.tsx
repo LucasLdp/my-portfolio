@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { ScrollTypewriter } from "#/components/molecules/scroll-typewriter";
 import { cn } from "#/lib/utils";
 
 type SectionHeadingProps = {
@@ -34,9 +35,10 @@ export function SectionHeading({
 				<h2 className="display-title text-3xl text-balance text-white sm:text-4xl lg:text-5xl">
 					{title}
 				</h2>
-				<p className="max-w-2xl text-sm leading-7 text-zinc-300 sm:text-base">
-					{description}
-				</p>
+				<ScrollTypewriter
+					text={description}
+					className="max-w-2xl text-sm leading-7 text-zinc-300 sm:text-base"
+				/>
 			</div>
 			{children}
 		</div>

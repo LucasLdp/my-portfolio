@@ -1,3 +1,4 @@
+import type { AmbientTheme } from "#/components/atoms/ambient-theme-toggle";
 import { Button } from "#/components/atoms/button";
 import { Reveal } from "#/components/molecules/reveal";
 import { SocialLinks } from "#/components/molecules/social-links";
@@ -6,13 +7,13 @@ import { HeroBackdrop } from "#/components/organisms/hero-backdrop";
 import { socialLinks } from "#/constants/portfolio";
 import { siteConfig } from "#/constants/site";
 
-export function Hero() {
+export function Hero({ theme }: { theme: AmbientTheme }) {
 	return (
 		<section
 			id="inicio"
 			className="relative overflow-hidden py-16 sm:py-24 lg:py-28"
 		>
-			<HeroBackdrop />
+			<HeroBackdrop theme={theme} />
 
 			<div className="page-wrap relative z-10 grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
 				<Reveal>
@@ -42,7 +43,7 @@ export function Hero() {
 
 				<Reveal delay={0.12} className="w-full lg:justify-self-end">
 					<div className="island-shell relative w-full max-w-[32.5rem] overflow-hidden rounded-[1.5rem] p-3 sm:rounded-[2rem] sm:p-5">
-						<div className="rounded-[1.1rem] border border-white/8 bg-[#09110f] p-4 shadow-2xl shadow-black/30 sm:rounded-[1.5rem] sm:p-6">
+						<div className="terminal-panel rounded-[1.1rem] border border-white/8 bg-[#09110f] p-4 shadow-2xl shadow-black/30 sm:rounded-[1.5rem] sm:p-6">
 							<div className="flex items-center gap-1.5 border-b border-white/10 pb-3 text-[0.65rem] text-zinc-400 sm:gap-2 sm:pb-4 sm:text-xs">
 								<span className="h-2.5 w-2.5 rounded-full bg-red-400 sm:h-3 sm:w-3" />
 								<span className="h-2.5 w-2.5 rounded-full bg-yellow-400 sm:h-3 sm:w-3" />
